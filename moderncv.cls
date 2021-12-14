@@ -298,7 +298,6 @@
 \renewcommand{\theenumiii}         {\@roman\c@enumiii}
 \renewcommand{\theenumiv}          {\@Alph\c@enumiv}
 
-% other symbols
 \newcommand*{\listitemsymbol}           {\labelitemi~}
 \newcommand*{\addresssymbol}            {}
 \newcommand*{\mobilephonesymbol}        {}

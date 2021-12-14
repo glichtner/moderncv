@@ -269,6 +269,7 @@
       \ifthenelse{\equal{#1}{gitlab}}      {\collectionadd[gitlab]{socials}      {\protect\httpslink[#3]{www.gitlab.com/#3}}}              {}%
       \ifthenelse{\equal{#1}{skype}}       {\collectionadd[skype]{socials}       {#3}}                                                     {}%
       \ifthenelse{\equal{#1}{researchgate}}{\collectionadd[researchgate]{socials}{\protect\httpslink[#3]{www.researchgate.net/profile/#3}}}{}%
+      \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[#3]{scholar.google.com/citations?user=#3}}}{}%
     }
     {\collectionadd[#1]{socials}{\protect\httpslink[#3]{#2}}}}
 
@@ -297,21 +298,21 @@
 \renewcommand{\theenumiii}         {\@roman\c@enumiii}
 \renewcommand{\theenumiv}          {\@Alph\c@enumiv}
 
-% other symbols
-\newcommand*{\listitemsymbol}          {\labelitemi~}
-\newcommand*{\addresssymbol}           {}
-\newcommand*{\mobilephonesymbol}       {}
-\newcommand*{\fixedphonesymbol}        {}
-\newcommand*{\faxphonesymbol}          {}
-\newcommand*{\emailsymbol}             {}
-\newcommand*{\homepagesymbol}          {}
-\newcommand*{\linkedinsocialsymbol}    {}
-\newcommand*{\xingsocialsymbol}        {}
-\newcommand*{\twittersocialsymbol}     {}
-\newcommand*{\githubsocialsymbol}      {}
-\newcommand*{\gitlabsocialsymbol}      {}
-\newcommand*{\skypesocialsymbol}       {}
-\newcommand*{\researchgatesocialsymbol}{}
+\newcommand*{\listitemsymbol}           {\labelitemi~}
+\newcommand*{\addresssymbol}            {}
+\newcommand*{\mobilephonesymbol}        {}
+\newcommand*{\fixedphonesymbol}         {}
+\newcommand*{\faxphonesymbol}           {}
+\newcommand*{\emailsymbol}              {}
+\newcommand*{\homepagesymbol}           {}
+\newcommand*{\linkedinsocialsymbol}     {}
+\newcommand*{\xingsocialsymbol}         {}
+\newcommand*{\twittersocialsymbol}      {}
+\newcommand*{\githubsocialsymbol}       {}
+\newcommand*{\gitlabsocialsymbol}       {}
+\newcommand*{\skypesocialsymbol}        {}
+\newcommand*{\researchgatesocialsymbol} {}
+\newcommand*{\googlescholarsocialsymbol}{}
 
 % other
 %------

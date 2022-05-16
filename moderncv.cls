@@ -270,6 +270,7 @@
       \ifthenelse{\equal{#1}{skype}}       {\collectionadd[skype]{socials}       {#3}}                                                     {}%
       \ifthenelse{\equal{#1}{researchgate}}{\collectionadd[researchgate]{socials}{\protect\httpslink[#3]{www.researchgate.net/profile/#3}}}{}%
       \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[#3]{scholar.google.com/citations?user=#3}}}{}%
+      \ifthenelse{\equal{#1}{orcid}}       {\collectionadd[orcid]{socials}       {\protect\httpslink[#3]{orcid.org/#3}}}                   {}%
     }
     {\collectionadd[#1]{socials}{\protect\httpslink[#3]{#2}}}}
 
@@ -313,6 +314,7 @@
 \newcommand*{\skypesocialsymbol}        {}
 \newcommand*{\researchgatesocialsymbol} {}
 \newcommand*{\googlescholarsocialsymbol}{}
+\newcommand*{\orcidsocialsymbol}        {}
 
 % other
 %------
